@@ -57,3 +57,35 @@ CREATE TABLE systems (
 	PRIMARY KEY (id)
 );
 ```
+# Sample data
+
+Here is a sample row in the database showing the kind of data it collects:
+
+```json
+[
+    {
+        "id": 1,
+        "hostname": "host1.example.com",
+        "created": "2026-01-07 22:51:59.320496",
+        "bios_vendor": "American Megatrends Inc.",
+        "bios_version": "F4",
+        "bios_release_date": "2021-03-02 00:00:00.000000",
+        "bios_revision": "5.13",
+        "manufacturer": "Gigabyte Technology Co., Ltd.",
+        "product_name": "C246M-WU4-CF",
+        "serial_number": "Default string",
+        "cpu_family": "Core i7",
+        "cpu_manufacturer": "Intel(R) Corporation",
+        "cpu_version": "Intel(R) Core(TM) i7-9700K CPU @ 3.60GHz",
+        "cpu_max_speed": "8300 MHz",
+        "cpu_socket": "Socket LGA1151",
+        "cpu_core_count": 8,
+        "memory_size": 32,
+        "memory_max": "64 GB",
+        "memory_ecc": "None",
+        "memory_slots": 4,
+        "memory_manufacturer": "Kingston",
+        "memory_speed": "2666 MT/s"
+    }
+]
+```
