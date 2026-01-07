@@ -28,7 +28,7 @@ export CPPFLAGS=-I/usr/local/include
 
 # SQLite Schema
 
-The tory database and 'machines' table will be created automatically. The schema looks like the following:
+The tory database and 'systems' table will be created automatically. The schema looks like the following:
 
 ```sql
 CREATE TABLE systems (
