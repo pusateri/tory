@@ -1,0 +1,23 @@
+[project]
+name = "tory"
+version = "0.1.0"
+description = "invenTORY server properties"
+readme = "README.md"
+authors = [
+    { name = "Tom Pusateri", email = "pusateri@keehole.org" }
+]
+requires-python = ">=3.11"
+dependencies = [
+    "parallel-ssh==2.16.0.post1",
+    "py-dmidecode==0.1.3",
+    "pysqlite3==0.5.4",
+    "sqlalchemy==2.0.45",
+    "sqlalchemy-utils==0.42.1",
+]
+
+[project.scripts]
+tory = "tory:main"
+
+[build-system]
+requires = ["uv_build>=0.9.21,<0.10.0"]
+build-backend = "uv_build"
