@@ -21,9 +21,19 @@ Initial installation requirements:
     1. doas
     2. dmidecode
 
-Running "uv run tory" for the first time will add all the dependencies to the uv virtual environment. This will build the SQLite Python wrapper which will need to find the sqlite3.h include file. For FreeBSD, you will need to set this environment variable for it to find the correct include file.
+Running "uv run tory" for the first time will add all the dependencies to the uv virtual environment. This will build the SQLite Python wrapper which will need to find the sqlite3.h include file.
+
+For FreeBSD, you will need to set this environment variable for it to find the correct include file.
 ```
 export CPPFLAGS=-I/usr/local/include
+```
+
+# Running
+
+tory has been tested on Ubuntu 25.10 and FreeBSD 14.3. dmidecode runs on a variety of linux and BSD systems.
+
+```sh
+uv run tory
 ```
 
 # SQLite Schema
